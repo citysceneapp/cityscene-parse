@@ -1,0 +1,10 @@
+{
+    "apps": [
+        {
+            "serverURL": "https://cityscene-parse.herokuapp.com/parse",
+            "appId": "5c0b58e54181eb18751b10c7",
+            "masterKey": "5c0b59154181eb18751b10c9",
+            "appName": "cityscene-parse"
+        }
+    ]
+}
