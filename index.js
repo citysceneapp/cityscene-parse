@@ -17,9 +17,6 @@ var api = new ParseServer({
     appId: process.env.APP_ID || 'myAppId',
     masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
     serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse', // Don't forget to change to https if needed
-    liveQuery: {
-        classNames: ['Posts', 'Comments'] // List of classes to support for query subscriptions
-    },
     verifyUserEmails: true,
     publicServerURL: process.env.SERVER_URL || 'http://localhost:1337/parse',
     appName: process.env.APP_NAME || 'CityScene',
@@ -27,7 +24,7 @@ var api = new ParseServer({
         module: '@parse/simple-mailgun-adapter',
         options: {
             fromAddress:
-                process.env.EMAIL_FROM || 'no-reply.citysceneapp@gmail.com',
+                process.env.EMAIL_FROM || 'no-reply-citysceneapp@gmail.com',
             domain:
                 process.env.MAILGUN_DOMAIN ||
                 'sandbox43c4b5db6b9247bea01631f7cd1598a5.mailgun.org',
